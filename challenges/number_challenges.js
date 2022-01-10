@@ -1,4 +1,4 @@
-/*
+/*1. Write a JavaScript function that returns an array with generated  Multiplication Table of a given number (max. 1000 iterations)*/
 
 function generateMultiplicationTable(number){
     table=[];
@@ -13,6 +13,9 @@ return table
 console.log(generateMultiplicationTable(10));
 
 
+/* 2. extension of first challenge:
+
+	Every time a value in the array is divisible by 20 add an (asterisk)* to it */
 
 function generateMultiplicationTable(number){
     table=[];
@@ -34,6 +37,8 @@ console.log(generateMultiplicationTable(5));
 
 
 
+/* 3. Write a Javascript function to return wether a value is divisible by a certain number */
+
 function isDivisible(a,b){
 
     if(a%b == 0){
@@ -48,7 +53,7 @@ function isDivisible(a,b){
 
 console.log(isDivisible(333,3));
 
-
+/* 4. Write a Javascript function that return an array with even numbers between a range */ 
 
 function getEvenNumbersInRange(a,b){
     let length = b-a;
@@ -68,6 +73,7 @@ function getEvenNumbersInRange(a,b){
 
 console.log(getEvenNumbersInRange(56,1211));
 
+/* 5. Write a Javascript function that calculate the distance between two coordinates. */ 
 
 function getDistance(a,b){
     let x = b[0]- a[0];
@@ -77,4 +83,3 @@ function getDistance(a,b){
 }
 
 console.log(getDistance([20,100],[50,800]));
-*/

@@ -1,5 +1,5 @@
-/*
 
+/* 1. Write a JavaScript function to check if a certain word is a Palindrome.*/
 function checkPalindrome(str) {
 
     const len = string.length;
@@ -15,6 +15,8 @@ function checkPalindrome(str) {
 
 
 
+/*2. Write a JavaScript function to get a random item from an array.*/
+
 function random(item)
 {
   
@@ -22,6 +24,7 @@ function random(item)
      
 }
 
+/* 3. Write a JavaScript program which accept a string as input and swap the case of each character. */ 
 
 for(var x=0; x<str.length; x++)
 {
@@ -40,19 +43,22 @@ for(var x=0; x<str.length; x++)
 }
 
 
-const array = [1, 2, 3, 4, 5, 6];
-let s = 0;
-let p = 1;
-let i;
-for (i = 0; i < array.length; i += 1) 
-   {
-    s += array[i];
-    p *= array[i];
-    }
-console.log(`Sum : ${s} Product :  ${p}`); 
+/* 4.Write a JavaScript function to compute the sum of an array of integers.*/
 
+/* 5. Write a JavaScript function to remove a specific element from an array */
 
+function removeSpecificelement(myNames,woord){
 
+  const index = myNames.indexOf(woord);
+  myNames.splice(index,1)
+  return myNames;
+
+}
+
+ 
+console.log(removeSpecificelement(myNames,"Barbie"));
+
+/* 6. Write a function to remove all strings with less than X characters from an array of strings */ 
 
 function remove_array_element(array, n)
  {
@@ -65,7 +71,7 @@ function remove_array_element(array, n)
 
 console.log(remove_array_element([2, 5, 9, 6], 5));
 
-
+/* 7. Write a JavaScript function to generate an array with the first X Fibonacci numbers. */
 
 var fibonacci_series = function (n) 
 {
@@ -83,6 +89,7 @@ var fibonacci_series = function (n)
 
  console.log(fibonacci_series(8));
 
+ /* 8. Write a JavaScript function that returns array elements larger than a number */
 
  function BiggerElements(val)
  {
@@ -93,6 +100,20 @@ var fibonacci_series = function (n)
  }
 var result = [11, 45, 4, 31, 64, 10]. filter(BiggerElements(10));
 console.log(result);
+
+
+
+/* 9. Write a Javascript function to generate a random color in format rgb(0,0,0); */
+
+
+
+
+/* 10. Write a JavaScript program to find the types of a given angle.  Go to the editor	
+  Types of angles:
+    Acute angle: An angle between 0 and 90 degrees.
+    Right angle: An 90 degree angle.
+    Obtuse angle: An angle between 90 and 180 degrees.
+    Straight angle: A 180 degree angle. */
 
 
 function angle_Type(angle) {
@@ -108,6 +129,8 @@ function angle_Type(angle) {
     return "Straight angle.";
   }
 
+
+/* 11. Write a JavaScript function to merge two arrays and removes all duplicates elements. */
 
   function merge_array(array1, array2) {
     const result_array = [];
@@ -130,20 +153,24 @@ function angle_Type(angle) {
 
 
 
-const myNames = ["John","Cindy","Omer","Barbie","Barbie"];
+/* 12. given [2,1,6,4]
+    expected => [8,1,216,64] => the power 3
+    thirdPower([2,1,6,4])
+*/
 
-function removeSpecificelement(myNames,woord){
+/* 13. given [2,1,6,4]
+    expected => [8,1,216,64] => the power N
+   nthPower([2,1,6,4],16)
+*/
 
-  const index = myNames.indexOf(woord);
-  myNames.splice(index,1)
-  return myNames;
+/* 14. given [2,1,6,4]
+    calc avg
+    calc sum    (reduce)
+*/
 
-}
 
- 
-console.log(removeSpecificelement(myNames,"Barbie"));
-
- 
+/* 15. given ["Ellen","bert","Bart","zaki","Sandra","Soroush"]
+  remove all the names that do not start with a capital */ 
 
 const Names = ["Ellen","bert","Bart","zaki","Sandra","Soroush"];
 
@@ -164,4 +191,6 @@ function removeNamesCapital(Names){
 
 console.log(removeNamesCapital(Names));
 
-*/
+
+/* 16. Write a Javascript function to find how many times a certain number occurs in that array. */
+/* 17. Write a JavaScript program to find the most frequent item of an array. */ 

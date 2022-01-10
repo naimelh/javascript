@@ -1,0 +1,1 @@
+All the exercises of javascript are grouped here together 

@@ -1,7 +1,6 @@
 
-/* 
 
-1- Write a JavaScript function to check whether a string is blank or not.
+/* 1- Write a JavaScript function to check whether a string is blank or not. */
 
 function is_Blank(x){
 
@@ -20,18 +19,26 @@ console.log(is_Blank(''));
 console.log(is_Blank('abc'));
 
 
-2- Write a JavaScript function to hide email addresses to protect from unauthorized user.
+/* 2- Write a JavaScript function to hide email addresses to protect from unauthorized user. */
 
-function protect_email(x){
+function protect_email(email){
      
-    return x.substring(0,3)+"..."+x.substring(x.length-12);
+    
+    const gedeelte = email.split("@");
+    const deel1 = gedeelt[0];
+    const gem = Math.floor(deel1.length / 2);
+    deel1 = deel1.substring(0, (deel1.length - gem));
+    const deel2 = gedeelt[1];
+    return deel1 + "...@" + deel2;
 
 }
+
+
 
 console.log(protect_email("robin_singh@example.com"));
 
 
-
+/* 3- Write a JavaScript function to insert a string within a string at a particular position (default is 1). */ 
 
 function insert(a, b="", c=1){
     
@@ -50,18 +57,18 @@ console.log(insert('We are doing some exercises.','JavaScript ',18));
 console.log(insert('We are doing some exercises.','JavaScript ',18));
 console.log(insert('We are doing some exercises.','JavaScript '));
 
+/* 4- Write a JavaScript function to chop a string into chunks of a given length. */
 
-
-function string_chop(a,b){
-     c =[];
-     n =0;
-        for (let i = 0; i < a.length; i+=b) {
-            if ((i+b) % b==0){
-                c[n]= a.substring(i,i+b);
+function string_chop(str,nr){
+     const c =[];
+     let n =0;
+        for (let i = 0; i < str.length; i+=nr) {
+            if ((i+nr) % nr==0){
+                c[n]= str.substring(i,i+nr);
                 n++;
             }
             else{
-                c[n] = a.substring(i);
+                c[n] = str.substring(i);
                 n++;
             }
           
@@ -75,6 +82,8 @@ console.log(string_chop('w3resource',2));
 console.log(string_chop('w3resource',3));
 
 
+/* 5- Write a JavaScript function to truncate a string to a certain length. */ 
+
 
 function truncate_string(a,b){
     return a.substring(0,b);
@@ -83,6 +92,7 @@ function truncate_string(a,b){
 console.log(truncate_string("Robin Singh",4));
 
 
+/* 6- Write a JavaScript function to test whether the character at the provided (character) index is lower case.*/ 
 
 function isLowerCaseAt(a,b){
 
@@ -99,6 +109,8 @@ function isLowerCaseAt(a,b){
 console.log(isLowerCaseAt ('Js STRING EXERCISES', 3));
 
 
+/* 7- Write a JavaScript function to test whether a string ends with a specified string.
+*/
 
 function endsWith(input, string){
 
@@ -108,6 +120,8 @@ function endsWith(input, string){
 
 
 console.log(endsWith('JS string exercises', 'exercises'));
+
+/*8- Write a JavaScript function to get unique guid (an acronym for 'Globally Unique Identifier?) of the specified length, or 32 by default.*/
 
 
 function guid(len) {
@@ -126,4 +140,3 @@ function guid(len) {
 console.log(guid());  
 console.log(guid(15));
 
-*/
